@@ -1,7 +1,4 @@
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@jaames/iro/dist/iro.min.js"></script>
-<script>
     var colorPicker = new iro.ColorPicker(".ms-colorpicker", {
         width: 180,
         color: "rgb(252, 252, 252)",
@@ -39,9 +36,9 @@
         colorPicker.color.hexString = this.value;
         swatch.style.backgroundColor = this.value;
     });
-</script>
 
- <script>
+
+
     var colorPickerTest = new iro.ColorPicker(".ms-colorpicker-test", {
         width: 180,
         color: "rgb(0, 0, 0)",
@@ -81,10 +78,10 @@
         colorPickerTest.color.hexString = this.value;
         swatchTest.style.backgroundColor = this.value;
     });
-</script>
 
 
-<script>
+
+
 const slider = document.getElementById('slider');
 
 function changeRadius() {
@@ -95,9 +92,9 @@ const rects = document.querySelectorAll('rect');
 }
 
 slider.addEventListener('input', changeRadius);
-</script>
 
-<script>
+
+
 function updateSelectors() {
 const svgsc = document.querySelectorAll('#my-svg');
   svgsc.forEach(svg => {
@@ -117,9 +114,9 @@ function changeStroke() {
 }
 
 sliderStroke.addEventListener('input', changeStroke);
-</script>
 
-<script>
+
+
 const sliderSize = document.getElementById('slider-size');
 
 function scalePath() {
@@ -152,9 +149,9 @@ polyline.forEach(polyline => {
 
 sliderSize.addEventListener('input', scalePath);
 scalePath();
-</script>
 
-<script>
+
+
   const colorPicker1 = new iro.ColorPicker(".ms-colorpicker-second", {
     width: 180,
     color: "rgb(143, 102, 255)",
@@ -275,9 +272,9 @@ const colorPicker2 = new iro.ColorPicker(".ms-colorpicker-third", {
   checkbox.addEventListener('change', applyBackground);
   trans.addEventListener('change', makeTrans);
   trans.addEventListener('change', applyBackground);
-</script>
 
-<script type="text/javascript">
+
+
 
 $(function(){
     $('.range input').on('mousemove', function(){
@@ -287,9 +284,7 @@ $(function(){
     });
 });
 
-</script>
 
-<script type="text/javascript">
 
 $(window).on('load', function(){
     $('.range-size input').on('mousemove', function(){
@@ -300,10 +295,6 @@ $(window).on('load', function(){
 });
 
 
-</script>
-
-<script type="text/javascript">
-
 $(function(){
     $('.range-stroke input').on('mousemove', function(){
         var getValRange = $(this).val();
@@ -311,10 +302,3 @@ $(function(){
         $('.range-stroke span').text(newValue + '%');
     });
 });
-
-</script>
-<style>
-	.collection-item-2:nth-child(odd) {
-  		background-color: rgba(71, 71, 71, 0.15) !important;
-  }
-</style>
